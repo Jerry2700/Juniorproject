@@ -37,7 +37,21 @@ function Details() {
         { label: 'Under Search'}
 
       ];
-console.log(selectedCategory)
+
+const handlesubmit=()=>{
+console.log(projectName);
+console.log(projectTitle);
+console.log(projectDescription);
+// console.log(selectedCategory);
+console.log(projectDetails);
+console.log(techStack);
+console.log(projectTheme);
+console.log(projectLink);
+console.log(videoLink);
+console.log(instituteName);
+console.log(selectedStatus);
+
+}
       
   return (
     <>
@@ -85,7 +99,7 @@ console.log(selectedCategory)
         maxWidth: '100%',
       }}
     >
-      <TextField fullWidth label="Enter Project Description" id="fullWidth" onChange={(e)=>setProjectDescription}  />
+      <TextField fullWidth label="Enter Project Description" id="fullWidth" onChange={(e)=>setProjectDescription(e.target.value)}  />
     </Box>
 
 
@@ -225,6 +239,11 @@ console.log(selectedCategory)
         setSelectedStatus(newValue);
       }}/>}
     />
+       </div>
+
+
+       <div>
+        <input type="submit"  onClick={handlesubmit}/>
        </div>
 
 
