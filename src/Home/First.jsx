@@ -2,10 +2,20 @@ import MediaCard from "../MUI/Card";
 import "./First.css";
 import TextField from '@mui/material/TextField';
 import SearchAppBar from "../Navbar/Navbar";
+import Button from '@mui/material/Button';
+import { useNavigate } from "react-router-dom";
+
+
 
 
 
 function First() {
+  const navigate = useNavigate();
+
+  const uploadproject=()=>{
+    navigate("/deta");
+  }
+
   return (
     <>
        <SearchAppBar/>
@@ -30,7 +40,7 @@ function First() {
         
         <div className="Upload-search">
               <div className="upload-search-div1">
-              <TextField id="outlined-basic" label="Upload Project UrL" variant="outlined" className="upload-field"  />
+              <Button variant="contained" onClick={uploadproject}>Upload Your Project</Button>
 
               </div>
               <div className="upload-search-div2">

@@ -23,8 +23,8 @@ function Login() {
             <input type="password" placeholder="Password" />
           </div>
           <input type="submit" value="Login" className="btn" />
-          <p className="social-text">Or Sign in with social platform</p>
-          <div className="social-media">
+          {/* <p className="social-text">Or Sign in with social platform</p> */}
+          {/* <div className="social-media">
             <a href="#" className="social-icon">
               <i className="fab fa-facebook"></i>
             </a>
@@ -37,7 +37,7 @@ function Login() {
             <a href="#" className="social-icon">
               <i className="fab fa-linkedin-in"></i>
             </a>
-          </div>
+          </div> */}
           <p className="account-text">
             Dont have an account? <a href="#" id="sign-up-btn2" >Sign up</a>
           </p>
@@ -57,7 +57,7 @@ function Login() {
             <input type="password" placeholder="Password" />
           </div>
           <input type="submit" value="Sign up" className="btn" />
-          <p className="social-text">Or Sign in with social platform</p>
+          {/* <p className="social-text">Or Sign in with social platform</p>
           <div className="social-media">
             <a href="#" className="social-icon">
               <i className="fab fa-facebook"></i>
@@ -71,7 +71,7 @@ function Login() {
             <a href="#" className="social-icon">
               <i className="fab fa-linkedin-in"></i>
             </a>
-          </div>
+          </div> */}
           <p className="account-text">
             Already have an account? <a href="#" id="sign-in-btn2">Sign in</a>
           </p>
